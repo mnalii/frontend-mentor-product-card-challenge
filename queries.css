@@ -1,0 +1,11 @@
+@media (max-width: 34em) {
+  .product-card {
+    grid-template-columns: 1fr;
+  }
+
+  .product-img-box {
+    height: 24rem;
+    grid-row: 1;
+    background-image: url('images/image-product-mobile.jpg');
+  }
+}

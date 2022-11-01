@@ -1,0 +1,127 @@
+:root {
+  --auqamarine-deep: hsl(158, 36%, 37%);
+  --auqamarine-deep-hover: hsl(158, 42%, 18%);
+  --primary-cream: hsl(30, 38%, 92%);
+
+  --neutral-dark-blue: hsl(212, 21%, 14%);
+  --aurometal-saurus: hsl(228, 12%, 48%);
+  --neutral-white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1;
+  background-color: var(--primary-cream);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card {
+  max-width: 60rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 10px;
+  background-color: var(--neutral-white);
+  overflow: hidden;
+  margin: 1.5rem;
+}
+
+.product-img-box {
+  background-image: url('images/image-product-desktop.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.product-content {
+  padding: 3.2rem;
+}
+
+.product-category {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--aurometal-saurus);
+}
+
+.product-name {
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-family: 'Fraunces', serif;
+  margin-bottom: 2.4rem;
+  /* line-height: 3.2; */
+}
+
+.product-description {
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2.3rem;
+}
+
+.price-container {
+  padding: 3rem 0;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.product-price {
+  font-size: 3.2rem;
+  font-family: 'Fraunces', serif;
+  color: var(--auqamarine-deep);
+}
+
+.product-price-line-strike {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  color: var(--aurometal-saurus);
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--neutral-white);
+  font-weight: 600;
+  padding: 1.6rem 6.2rem;
+  border-radius: 8px;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--auqamarine-deep-hover);
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-cart {
+  background-color: var(--auqamarine-deep);
+}
